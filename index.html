@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        
+        body {
+            font-size: 20px;
+            background-color: #D3D3D3;
+            font-weight: italic;
+        }
+
+        h1 {
+            background-color: #000000;
+            font-weight: italic;
+        }
+        h2{
+       
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        #animated-logo {
+            animation: spin 5s linear infinite;
+        }
+
+        .hover-button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .hover-button:hover {
+            background-color: #FF0000; /* Change to the desired hover color */
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+.glowing-text {
+    animation: glow 1s ease infinite alternate;
+       
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #FF0000;
+    }
+    25% {
+        text-shadow: 0 0 20px #FF0000;
+    }50% {
+        text-shadow: 0 0 5px #32a852;
+    }
+    100% {
+        text-shadow: 0 0 20px  #32a852;
+    }
+    
+    .call{
+        
+    }
+  @keyframes colorchange {
+    0% {
+        color: #fff; 
+    }
+    50% {
+        color: #32c8da;
+    }
+    100% {
+        color: pink; 
+    }
+}
+
+}
+
+    </style>
+</head>
+
+<body>
+    
+    <font color="white">
+    <img src="logo.jpeg" alt="Image 1" width="200" height="200">
+    <h1><center>Ai's DGC | Discounted Game Credits</center></h1>
+    <font color="#000000">
+        <marquee behavior="alternate">
+            <img src="games.jpeg" alt="Image 1" width="1500" height="500">
+        </marquee>
+
+        <center>
+            <p>Hi players! Welcome to Ai's DGC. Purchase your favorite Game Top ups at a discounted cost.</p>
+        </center>
+
+        <h2 id="call" class="glowing-text"><center>Call of Duty Mobile</center></h2>
+        <div class="button-container">
+            <button class="hover-button" id="100">100 GSHELLS</button>
+            <button class="hover-button"id="200">200 GSHELLS</button>
+            <button class="hover-button"id="300">300 GSHELLS</button>
+            <button class="hover-button"id="500">500 GSHELLS</button>
+            <button class="hover-button"id="1000">1000 GSHELLS</button>
+        </div>
+    </font>
+</font>
+
+    <script>
+        
+const callOfDutyHeading = document.getElementById('call');
+
+// Get all the buttons
+const buttons = document.querySelectorAll('.hover-button');
+
+// Add click event listeners to each button
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+        // Remove the glowing effect from the heading
+        callOfDutyHeading.classList.remove('glowing-text');
+
+        // Add the glowing effect to the heading when a button is clicked
+        callOfDutyHeading.classList.add('glowing-text');
+    });
+});
+
+
+        
+        
+  </script>
+</body>
+
+
+</html>
