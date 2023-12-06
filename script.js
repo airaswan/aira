@@ -30,7 +30,7 @@ function changeColor() {
 }
 
 function openPdf() {
-
+   var pdfPath = 'Curvitae.pdf';
 
     window.open(pdfPath, 'Curvitae.pdf');
 }
