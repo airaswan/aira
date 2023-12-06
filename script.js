@@ -28,3 +28,12 @@ function changeColor() {
 
     gameTitle.style.color = newColor;
 }
+
+function openPdf() {
+
+
+    window.open(pdfPath, 'Curvitae.pdf');
+}
+
+
+document.getElementById('curvit').addEventListener('click', openPdf);
