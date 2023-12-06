@@ -29,11 +29,7 @@ function changeColor() {
     gameTitle.style.color = newColor;
 }
 
-function openPdf() {
-   var pdfPath = 'Curvitae.pdf';
-
-    window.open(pdfPath, 'Curvitae.pdf');
-}
-
-
-document.getElementById('curvit').addEventListener('click', openPdf);
+const curvit = document.getElementById("curvit");
+curvit.addEventListener("click" , function (e) {
+    console.log ('Curvitae.pdf')
+});
