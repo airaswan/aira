@@ -262,7 +262,10 @@
         color: rgb(134, 6, 57);
      }
 
-     footer .col .button {
+     footer .col button {
+         set-decoration: none;
+     }
+     footer .col a {
          set-decoration: none;
      }
 
